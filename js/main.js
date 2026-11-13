@@ -183,25 +183,20 @@ function initGuestbook() {
 
   const defaultWishes = [
     {
-      author: 'Nguyễn Văn Minh (Đoàn viên)',
+      author: 'Phương Mai',
       msg: 'Chúc Đại hội thành công rực rỡ! Tuổi trẻ chi đoàn vững bước tiên phong, sáng tạo!',
       color: 'sticky-yellow'
     },
     {
-      author: 'Trần Thị Mai (BCH Chi đoàn)',
+      author: 'Võ Ngọc Phuơng Thy',
       msg: 'Nhiệm kỳ mới, thắng lợi mới! Khát vọng cống hiến vì cộng đồng và quê hương thân yêu!',
       color: 'sticky-blue'
     },
     {
-      author: 'Lê Hoàng Long',
+      author: 'Cẩm Tú',
       msg: 'Tự hào là người Đoàn viên TNCS Hồ Chí Minh. Chúc Đại hội bầu ra BCH nhiệm kỳ mới tài năng!',
       color: 'sticky-pink'
     },
-    {
-      author: 'Đặng Thảo Vy',
-      msg: 'Tuổi trẻ chẳng hai lần thắm lại - Chúc các đồng chí luôn tràn đầy lửa nhiệt huyết thanh xuân!',
-      color: 'sticky-green'
-    }
   ];
 
   // Load from localStorage or defaults
