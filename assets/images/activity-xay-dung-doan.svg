@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="100%" height="100%">
+  <defs>
+    <filter id="doodle-card-filter" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+    </filter>
+  </defs>
+
+  <g filter="url(#doodle-card-filter)">
+    <!-- Card background with hand-drawn paper look -->
+    <rect x="8" y="8" width="384" height="324" rx="16" fill="#ffffff" stroke="#263238" stroke-width="3.5" />
+    
+    <!-- Top decorative accent -->
+    <path d="M 8 22 Q 200 36 392 22 L 392 8 L 8 8 Z" fill="#38bdf8" opacity="0.25" />
+    
+    <!-- Top left washi tape effect -->
+    <polygon points="35,0 95,3 90,20 30,17" fill="#ffd100" opacity="0.85" stroke="#263238" stroke-width="1.5" />
+
+    <!-- Corner pushpin -->
+    <circle cx="360" cy="24" r="7" fill="#e63946" stroke="#263238" stroke-width="2" />
+    <circle cx="358" cy="22" r="2" fill="#ffffff" />
+
+    <!-- Main illustration content -->
+    
+            <!-- Youth Union Member Badge & Handbook & Star -->
+            <g transform="translate(150, 45)">
+                <circle cx="50" cy="50" r="45" fill="#0066cc" stroke="#263238" stroke-width="3.5"/>
+                <circle cx="50" cy="50" r="36" fill="#e63946" stroke="#ffd100" stroke-width="2"/>
+                <polygon points="50,28 55,42 69,42 58,51 62,65 50,56 38,65 42,51 31,42 45,42" fill="#ffd100"/>
+                <path d="M 15 80 Q -10 50 15 20" stroke="#52b788" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="3 5"/>
+                <path d="M 85 80 Q 110 50 85 20" stroke="#52b788" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="3 5"/>
+            </g>
+            <!-- Member Handbook (So doan vien) -->
+            <g transform="translate(90, 160)">
+                <rect x="0" y="0" width="95" height="120" rx="6" fill="#d90429" stroke="#263238" stroke-width="3.5"/>
+                <rect x="0" y="0" width="12" height="120" fill="#991b1b"/>
+                <circle cx="50" cy="45" r="20" fill="#ffd100" stroke="#263238" stroke-width="2.5"/>
+                <text x="50" y="53" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#d90429">★</text>
+                <text x="50" y="85" font-family="'Patrick Hand', 'Mali', sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ffffff">SỔ ĐOÀN VIÊN</text>
+            </g>
+            <!-- Pen & Certificate -->
+            <g transform="translate(210, 180) rotate(15)">
+                <rect x="0" y="0" width="85" height="100" rx="4" fill="#fffbeb" stroke="#263238" stroke-width="3"/>
+                <line x1="15" y1="20" x2="70" y2="20" stroke="#e63946" stroke-width="3" stroke-linecap="round"/>
+                <line x1="15" y1="38" x2="70" y2="38" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                <line x1="15" y1="52" x2="70" y2="52" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                <line x1="15" y1="66" x2="55" y2="66" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="55" cy="80" r="7" fill="#ef4444" opacity="0.7"/>
+            </g>
+        
+
+    <!-- Bottom label badge -->
+    <g transform="translate(25, 292)">
+      <rect x="0" y="0" width="350" height="28" rx="8" fill="#0066cc" stroke="#263238" stroke-width="2" />
+      <text x="175" y="19" font-family="'Patrick Hand', 'Mali', cursive, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+        ★ XÂY DỰNG CHI ĐOÀN VỮNG MẠNH ★
+      </text>
+    </g>
+  </g>
+</svg>

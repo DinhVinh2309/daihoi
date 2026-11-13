@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đại hội Chi đoàn Khu phố 8 | Nhiệm kỳ 2026 - 2027</title>
+  <meta name="description" content="Trang thông tin Đại hội Đoàn TNCS Hồ Chí Minh - Chào mừng đại hội, dấu ấn hoạt động chi đoàn và văn kiện đại hội.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo_doan.png">
+</head>
+<body>
+
+  <!-- ====================================================================
+       NAVBAR (HAND-DRAWN STICKY HEADER)
+       ==================================================================== -->
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo_doan.png" alt="Logo Đoàn TNCS Hồ Chí Minh" class="nav-logo">
+        <div class="nav-titles">
+          <span class="nav-title-main">ĐẠI HỘI CHI ĐOÀN KHU PHỐ 8</span>
+          <span class="nav-title-sub">LẦN THỨ I • NHIỆM KỲ 2026 - 2027</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Trang Chủ</a></li>
+        <!-- <li><a href="#gia-tri" class="nav-link">Phương Châm</a></li> -->
+        <li><a href="#hoat-dong" class="nav-link">Recap Hoạt Động</a></li>
+        <!-- <li><a href="#so-lieu" class="nav-link">Số Liệu Nhiệm Kỳ</a></li> -->
+        <li><a href="#luu-but" class="nav-link">Lưu Bút</a></li>
+        <li><a href="vankien.html" class="nav-link highlight">Văn Kiện Đại Hội</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Menu">
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         SECTION 1: HERO (BỨC TRANH ANIMATION THANH NIÊN & TITLE ĐẠI HỘI)
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-grid">
+            <!-- Left Column: Title & Welcoming Content -->
+            <div class="hero-content">
+              <div class="hero-badge-wrap">
+                <span class="hero-badge">
+                  ⭐ NHIỆT LIỆT CHÀO MỪNG ⭐
+                </span>
+              </div>
+
+              <h1 class="hero-title-main">
+                ĐẠI HỘI <span>CHI ĐOÀN KHU PHỐ 8</span>
+              </h1>
+              
+              <!-- <div class="hero-unit-name">
+                CHI ĐOÀN CƠ SỞ CƠ QUAN / ĐƠN VỊ
+              </div> -->
+
+              <div class="hero-term">
+                LẦN THỨ I • NHIỆM KỲ 2026 - 2027
+              </div>
+
+              <!-- Slogan Box -->
+              <div class="hero-slogan-box">
+                <!-- <div class="slogan-label">Khẩu hiệu hành động:</div> -->
+                <div class="slogan-text">
+                  "KHÁT VỌNG - TIÊN PHONG - BẢN LĨNH - ĐOÀN KẾT - SÁNG TẠO"
+                </div>
+              </div>
+
+              <!-- Call to Action Buttons -->
+              <div class="hero-buttons">
+                <a href="vankien.html" class="btn btn-accent">
+                  Xem Văn Kiện Đại Hội
+                </a>
+                <a href="#hoat-dong" class="btn btn-primary">
+                  Xem Recap Hoạt Động
+                </a>
+                <button class="btn btn-yellow btn-celebrate">
+                  Chúc Mừng
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Hand-drawn Animated Illustration of Vietnamese Youth -->
+            <div class="hero-visual">
+              <div class="hero-illustration-wrap">
+                <!-- Top Corner Tape -->
+                <div class="card-tape"></div>
+                <!-- Hand-drawn Illustration of Vietnamese Youth -->
+                <img src="assets/images/youth-hero.jpg" alt="Bức tranh thanh niên Việt Nam hân hoan chào mừng Đại hội Đoàn" class="hero-illustration">
+
+                <!-- Animated Floating Overlay (Stars, Hearts, Musical Notes) -->
+                <div class="hero-anim-overlay">
+                  <span class="anim-float-star star-1">✨</span>
+                  <span class="anim-float-star star-2">⭐</span>
+                  <span class="anim-float-star star-3">✨</span>
+                  <span class="anim-float-heart heart-1">💖</span>
+                  <span class="anim-float-note note-1">🎵</span>
+                  <span class="anim-float-note note-2">🎶</span>
+                </div>
+
+                <!-- Floating hand-drawn tag -->
+                <div class="hero-float-tag">
+                  🌱 Tuổi Trẻ Sẵn Sàng Cống Hiến!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: PHƯƠNG CHÂM & GIÁ TRỊ CỐT LÕI
+         ==================================================================== -->
+    <!-- <section class="values-section" id="gia-tri">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LÝ TƯỞNG THANH NIÊN</span>
+          <h2 class="section-title">5 GIÁ TRỊ TIÊN PHONG CỦA CHI ĐOÀN</h2>
+          <p class="section-subtitle">
+            Phát huy tinh thần xung kích, mỗi đoàn viên là một hạt nhân năng động, sáng tạo và cống hiến hết mình vì sự phát triển chung.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="push-pin"></div>
+            <div class="value-icon">🔥</div>
+            <h3 class="value-title">Khát Vọng</h3>
+            <p class="value-desc">Nuôi dưỡng ước mơ lớn, hoài bão phụng sự Tổ quốc và xây dựng quê hương ngày càng tươi đẹp.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="push-pin"></div>
+            <div class="value-icon">🚀</div>
+            <h3 class="value-title">Tiên Phong</h3>
+            <p class="value-desc">Đi đầu trong việc khó, đảm nhận các công trình phần việc thanh niên và nhiệm vụ cấp bách.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="push-pin"></div>
+            <div class="value-icon">💡</div>
+            <h3 class="value-title">Sáng Tạo</h3>
+            <p class="value-desc">Ứng dụng chuyển đổi số, đổi mới phương thức làm việc và giải quyết vấn đề bằng tư duy hiện đại.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="push-pin"></div>
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">Đoàn Kết</h3>
+            <p class="value-desc">Gắn bó yêu thương, đồng lòng tương trợ, tập hợp đông đảo thanh niên cùng chung chí hướng.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="push-pin"></div>
+            <div class="value-icon">🛡️</div>
+            <h3 class="value-title">Bản Lĩnh</h3>
+            <p class="value-desc">Vững vàng lý tưởng, không ngại gian khó, tự tin hội nhập và bảo vệ lẽ phải, công lý.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ====================================================================
+         BANNER CALLOUT VĂN KIỆN ĐẠI HỘI
+         ==================================================================== -->
+    <section class="vankien-callout-section">
+      <div class="container">
+        <div class="vankien-callout-card">
+          <div class="vankien-callout-content">
+            <span class="hero-badge vankien-callout-label">📌 TÀI LIỆU CHÍNH THỨC</span>
+            <h2 class="vankien-callout-title">DỰ THẢO VĂN KIỆN ĐẠI HỘI</h2>
+            <p class="vankien-callout-copy">Tra cứu toàn văn Đề án nhân sự và Dự thảo Văn kiện Đại hội.</p>
+          </div>
+          <a href="vankien.html" class="btn btn-accent vankien-callout-btn">
+            <span>Mở Trang Văn Kiện Đại Hội</span>
+            <span class="vankien-callout-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: DẤU ẤN NHIỆM KỲ BẰNG CON SỐ (HAND-DRAWN INFOGRAPHIC)
+         ==================================================================== -->
+    <section class="stats-section" id="so-lieu">
+      <div class="container">
+        <div class="stats-card">
+          <div class="washi-tape washi-tape-blue"></div>
+          
+          <div class="section-header" style="margin-bottom: 30px;">
+            <span class="section-tag">KẾT QUẢ ẤN TƯỢNG</span>
+            <h2 class="section-title">CON SỐ BIẾT NÓI TRONG NHIỆM KỲ</h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-num" data-target="100" data-suffix="+">100+</div>
+              <div class="stat-label">Lượt đoàn viên tham gia tình nguyện</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num" data-target="12" data-suffix="">12+</div>
+              <div class="stat-label">Hoạt động đã tổ chức</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num" data-target="01" data-suffix="">01</div>
+              <div class="stat-label">Đoàn viên ưu tú kết nạp Đảng</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num" data-target="01" data-suffix="">01</div>
+              <div class="stat-label">Đoàn viên ưu tú giới thiệu cho Đảng</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num" data-target="100" data-suffix="%">100%</div>
+              <div class="stat-label">Đoàn viên học tập Nghị quyết</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: RECAP HOẠT ĐỘNG CỦA CHI ĐOÀN NĂM 2026
+         ==================================================================== -->
+    <section class="recap-section" id="hoat-dong">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">NHÌN LẠI CHẶNG ĐƯỜNG 2026</span>
+          <h2 class="section-title">DẤU ẤN HOẠT ĐỘNG CHI ĐOÀN NĂM 2026</h2>
+          <p class="section-subtitle">
+            Cùng nhìn lại các hoạt động xây dựng tổ chức Đoàn, chăm lo thiếu nhi, tình nguyện và gắn kết cộng đồng trong năm 2026.
+          </p>
+        </div>
+
+        <!-- Category Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">★ Tất cả hoạt động</button>
+          <button class="filter-btn" data-filter="sinh-hoat-he">☀️ Sinh hoạt hè & thiếu nhi</button>
+          <button class="filter-btn" data-filter="tinh-nguyen">🌱 Tình nguyện & an sinh</button>
+          <button class="filter-btn" data-filter="xay-dung-doan">🚩 Xây dựng tổ chức Đoàn</button>
+          <button class="filter-btn" data-filter="van-hoa-cong-dong">🌸 Văn hóa cộng đồng</button>
+        </div>
+
+        <!-- Polaroid Scrapbook Cards Grid -->
+        <div class="scrapbook-grid" id="recap-grid">
+          
+          <!-- Card 1: Xây dựng tổ chức Đoàn -->
+          <article class="polaroid-card" data-category="xay-dung-doan">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/ketnapdang.jpg" alt="Kết nạp Đảng">
+              <span class="card-category-badge">🚩 Xây dựng tổ chức Đoàn</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Ngày 10/10/2026</span>
+                <span>📍 Nhà văn hóa Khu phố</span>
+              </div>
+              <h3 class="card-title">Đồng chí Võ Ngọc Phương Thy, Bí thư Chi đoàn Khu phố 8, được kết nạp Đảng</h3>
+              <p class="card-desc">
+                Ngày 10/10/2026, Chi bộ Khu phố 8 thuộc Đảng bộ phường An Hội Tây tổ chức lễ kết nạp Đảng cho đồng chí Võ Ngọc Phương Thy – Ủy viên Ban Chấp hành Đoàn phường, thành viên Ủy ban Hội LHTN Việt Nam phường, Bí thư Chi đoàn – Chi hội trưởng Chi hội Khu phố 8.
+              </p>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">48</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Hội trại Tiếp Bước lần II -->
+          <article class="polaroid-card" data-category="sinh-hoat-he">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/hoitrai2.jpg" alt="Hội trại Tiếp Bước lần II">
+              <span class="card-category-badge">🏕️ Sinh hoạt hè • Hội trại</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Ngày 09/08/2026</span>
+                <span>📍 Địa bàn Khu phố</span>
+              </div>
+              <h3 class="card-title">Hội trại Tiếp Bước lần II – năm 2026</h3>
+              <p class="card-desc">
+                Sáng 09/08/2026, hành trình Tiếp Bước lần II năm 2026 – Hành trình Hoa Lửa chính thức bắt đầu với những thử thách đầu tiên trong không khí sôi nổi, gắn kết.
+              </p>
+              <div class="card-highlights">
+                <span class="card-pill">25+ trại sinh</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">36</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Hội chợ Hè chăm lo thiếu nhi -->
+          <article class="polaroid-card" data-category="sinh-hoat-he">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/hoichohe.jpg" alt="Hội chợ Hè năm 2026">
+              <span class="card-category-badge">☀️ Sinh hoạt hè • Hội chợ thiếu nhi</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 08/2026</span>
+                <span>📍 Nhà văn hóa Khu phố</span>
+              </div>
+              <h3 class="card-title">Hội chợ Hè năm 2026</h3>
+              <p class="card-desc">
+                Hội chợ Hè của Nhà Tụi Tớ mang đến một ngày trải nghiệm vui tươi dành cho các em thiếu nhi. Chương trình có 5 gian hàng và thu hút hơn 100 em tham gia.
+              </p>
+              <div class="card-highlights">
+                <span class="card-pill">100+ thiếu nhi tham gia</span>
+                <span class="card-pill">5 gian hàng</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">52</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Bữa ăn yêu thương -->
+          <article class="polaroid-card" data-category="tinh-nguyen">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/buaanlan2.jpg" alt="Bữa ăn yêu thương">
+              <span class="card-category-badge">💚 Tình nguyện • An sinh xã hội</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 08/2026</span>
+                <span>📍 Nhà văn hóa Khu phố</span>
+              </div>
+              <h3 class="card-title">Bữa ăn yêu thương lần 3</h3>
+              <p class="card-desc">
+                Thành viên Nhà Tụi Tớ cùng những tấm lòng đồng hành chung tay tổ chức Bữa Ăn Yêu Thương lần 3, chuẩn bị hơn 100 suất ăn.
+              </p>
+              <div class="card-highlights">
+                <span class="card-pill">100+ suất ăn</span>
+                <span class="card-pill">20+ người tham gia</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">41</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Hội trại Tiếp Bước lần I -->
+          <article class="polaroid-card" data-category="sinh-hoat-he">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/hoitrai1.jpg" alt="Hội trại Tiếp Bước lần I">
+              <span class="card-category-badge">🏕️ Sinh hoạt hè • Hội trại</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 07/2026</span>
+                <span>📍 Địa bàn Khu phố</span>
+              </div>
+              <h3 class="card-title">Hội trại Tiếp Bước lần I – năm 2026</h3>
+              <p class="card-desc">
+                Hội trại Tiếp Bước lần I tạo không gian để các trại sinh tham gia trò chơi, cùng nhau vượt thử thách và rèn luyện tinh thần đoàn kết, sẻ chia.
+              </p>
+              <div class="card-highlights">
+                <span class="card-pill">15 trại sinh tham gia</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">39</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Khai mạc Hè -->
+          <article class="polaroid-card" data-category="sinh-hoat-he">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/khaimache.jpg" alt="Khai mạc Hè">
+              <span class="card-category-badge">☀️ Sinh hoạt hè • Khai mạc</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 06/2026</span>
+                <span>📍 Phòng truyền thống Đoàn</span>
+              </div>
+              <h3 class="card-title">Khai mạc Hè 2026</h3>
+              <p class="card-desc">
+                Khai mạc Hè 2026 mở đầu mùa hè tại Ngôi Nhà Tụi Tớ với nhiều niềm vui, tiếng cười và hoạt động dành cho thiếu nhi. Chương trình có hơn 50 em tham gia.
+              </p>
+              <div class="card-highlights">
+                <span class="card-pill">50+ thiếu nhi</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">65</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Xuân tình nguyện - gói bánh chưng -->
+          <article class="polaroid-card" data-category="tinh-nguyen">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/goibanhchung.jpg" alt="Bánh chưng xanh - Tết an lành">
+              <span class="card-category-badge">🌱 Xuân tình nguyện • Tết</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 01/2026</span>
+                <span>📍 Nhà văn hóa Khu phố</span>
+              </div>
+              <h3 class="card-title">Bánh chưng xanh – Tết an lành</h3>
+              <p class="card-desc">
+                Hoạt động gói bánh chưng xanh mang đến tiếng cười, sự sẻ chia và không khí Tết tại Nhà văn hóa Khu phố. Chương trình nằm trong Xuân tình nguyện 2026.
+              </p>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">32</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Chiến dịch gây quỹ Gieo mầm xuân -->
+          <article class="polaroid-card" data-category="tinh-nguyen">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/gayquytet.jpg" alt="Gieo mầm xuân">
+              <span class="card-category-badge">🌱 Xuân tình nguyện • Gây quỹ</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 01/2026</span>
+                <span>📍 Nhà văn hóa Khu phố</span>
+              </div>
+              <h3 class="card-title">Chiến dịch gây quỹ “Gieo mầm xuân”</h3>
+              <p class="card-desc">
+                Nhà Tụi Tớ phối hợp cùng Liên Chi đoàn Khu phố 10, 11, 14, 15 và Đoàn phường An Hội Tây tổ chức chương trình “Xuân sẻ chia – Vì đàn em thân yêu”, hướng đến thiếu nhi có hoàn cảnh khó khăn. Hoạt động trao tặng 8 phần quà.
+              </p>
+              <div class="card-highlights">
+                <span class="card-pill">8 phần quà</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">57</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9: Góc Xuân tuổi trẻ -->
+          <article class="polaroid-card" data-category="van-hoa-cong-dong">
+            <div class="card-tape"></div>
+            <div class="card-img-wrap" data-open-modal>
+              <img src="assets/images/gocxuan.jpg" alt="Góc xuân 2026">
+              <span class="card-category-badge">🌸 Văn hóa cộng đồng • Xuân</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">📅 Tháng 01/2026</span>
+                <span>📍 Nhà văn hóa Khu phố</span>
+              </div>
+              <h3 class="card-title">Góc Xuân tuổi trẻ 2026</h3>
+              <p class="card-desc">
+                Tập thể cùng lên ý tưởng và hoàn thiện Góc Xuân Tuổi Trẻ 2026, tạo tiểu cảnh Tết để người dân đến tham quan và chụp ảnh tại Nhà văn hóa Khu phố.
+              </p>
+              <div class="card-footer">
+                <button type="button" class="card-action" data-open-modal aria-haspopup="dialog">
+                  🔍 Xem chi tiết
+                </button>
+                <div class="card-reactions">
+                  <button class="reaction-btn" title="Thả tim">
+                    ❤️ <span class="react-count">43</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: GÓC LƯU BÚT & LỜI CHÚC ĐẠI HỘI
+         ==================================================================== -->
+    <section class="wishes-section" id="luu-but">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TÌNH CẢM & KHÁT VỌNG</span>
+          <h2 class="section-title">BẢNG LƯU BÚT CHÚC MỪNG ĐẠI HỘI</h2>
+          <p class="section-subtitle">
+            Mỗi lời chúc là một ngọn lửa tiếp thêm nhiệt huyết cho nhiệm kỳ mới. Hãy để lại thông điệp của bạn gửi gắm tới Đại hội!
+          </p>
+        </div>
+
+        <div class="corkboard">
+          <!-- Sticky Notes Wall -->
+          <div class="corkboard-grid" id="corkboard-grid">
+            <!-- Dynamic sticky notes loaded by JS -->
+          </div>
+
+          <!-- Add Wish Form -->
+          <div class="wish-form-card">
+            <div class="washi-tape washi-tape-pink"></div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 14px; text-align: center;">
+              ✏️ Gửi Lời Chúc Mừng Đến Đại Hội
+            </h3>
+            <form id="wish-form">
+              <div class="form-group">
+                <label class="form-label" for="wish-name">Họ và tên / Đơn vị của bạn:</label>
+                <input type="text" id="wish-name" class="form-input" placeholder="Ví dụ: Nguyễn Văn An - Chi đoàn 1" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wish-msg">Lời chúc mừng hoặc thông điệp gửi gắm:</label>
+                <textarea id="wish-msg" class="form-textarea" rows="3" placeholder="Nhập lời chúc tốt đẹp tới Đại hội..." required></textarea>
+              </div>
+              <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  📌 Dán Lên Bảng Lưu Bút
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION: MÃ QR ĐIỂM DANH & BÀI CA CHÍNH THỨC CỦA ĐOÀN
+         ==================================================================== -->
+    <!-- <section style="padding: 10px 0 40px;">
+      <div class="container">
+        <div class="interactive-extras-grid">
+          <div class="qr-box">
+            <div class="washi-tape washi-tape-blue"></div>
+            <img src="assets/images/qr-code.svg" alt="Mã QR tra cứu nhanh văn kiện và điểm danh" class="qr-img">
+            <div>
+              <span class="hero-badge" style="font-size: 0.95rem; padding: 3px 12px; margin-bottom: 6px;">QUÉT MÃ QR NHANH</span>
+              <h3 style="font-size: 1.3rem; color: var(--primary-blue); margin-bottom: 6px;">Điểm Danh & Nhận Tài Liệu Số</h3>
+              <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.5; margin-bottom: 12px;">
+                Đại biểu dùng ứng dụng Zalo, Camera hoặc VNeID quét mã QR để tra cứu trực tuyến Văn kiện Đại hội trên điện thoại cá nhân.
+              </p>
+              <a href="vankien.html" class="btn btn-outline" style="font-size: 0.9rem; padding: 6px 14px;">
+                📱 Xem Văn Kiện Trực Tuyến
+              </a>
+            </div>
+          </div>
+
+          <div class="song-card">
+            <div class="washi-tape"></div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <span class="hero-badge" style="background-color: var(--primary-red-light); color: var(--primary-red); border-color: var(--primary-red); font-size: 0.95rem; padding: 3px 12px;">
+                ĐOÀN CA VIỆT NAM
+              </span>
+              <button id="play-song-btn" class="btn btn-yellow btn-celebrate" style="padding: 4px 12px; font-size: 0.85rem;" title="Phát giai điệu và vỗ tay cổ vũ">
+                🎶 Phát Giai Điệu Đoàn Ca!
+              </button>
+            </div>
+            <h3 style="font-size: 1.3rem; color: var(--primary-red); margin-bottom: 4px;">Thanh Niên Làm Theo Lời Bác</h3>
+            <div style="font-size: 0.85rem; color: var(--ink-muted);">Nhạc và lời: Nhạc sĩ Hoàng Hòa</div>
+            <div class="song-lyrics">
+              "Kết liên lại thanh niên chúng ta cùng nhau đi lên,<br>
+              Giơ nắm tay thề, gìn giữ hòa bình độc lập tự do.<br>
+              Kết liên lại thanh niên chúng ta cùng quyết tiến bước,<br>
+              Đánh tan thù hờn, làm theo lời Bác: <strong>Không có việc gì khó!</strong>"
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!-- ====================================================================
+       INTERACTIVE MODAL (CHI TIẾT HOẠT ĐỘNG)
+       ==================================================================== -->
+  <div class="modal-overlay" id="activity-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Đóng">&times;</button>
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="Hình ảnh hoạt động">
+      </div>
+      <div id="modal-meta" class="modal-meta"></div>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <div id="modal-desc" class="modal-desc"></div>
+      <div id="modal-stats" class="modal-stats"></div>
+      <div style="text-align: right;">
+        <button class="btn btn-yellow btn-celebrate" style="padding: 8px 18px; font-size: 0.95rem;">
+          ❤️ Tuyệt Vời Quá!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Quote Box -->
+      <div class="footer-quote-box">
+        <div class="footer-quote">
+          "Không có việc gì khó, chỉ sợ lòng không bền<br>
+          Đào núi và lấp biển, quyết chí ắt làm nên."
+        </div>
+        <div style="font-family: 'Patrick Hand', cursive; font-size: 1.15rem; font-weight: bold; color: var(--primary-red); margin-top: 6px;">
+          — Chủ tịch Hồ Chí Minh —
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo_doan.png" alt="Logo Đoàn" style="width: 44px; height: 44px;">
+            <div style="font-family: 'Mali', cursive; font-weight: 700; color: var(--primary-blue); font-size: 1.1rem;">
+              ĐẠI HỘI CHI ĐOÀN KHU PHỐ 8<br>
+              LẦN THỨ I, NHIỆM KỲ 2026 - 2027
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.6;">
+            Trang thông tin phục vụ Đại hội Chi đoàn Khu phố 8, nhiệm kỳ 2026 - 2027. Cung cấp thông tin về chương trình, văn kiện, hoạt động và các sự kiện nổi bật của Chi đoàn.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.15rem; color: var(--ink-color); margin-bottom: 12px;">Liên Kết Nhanh</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-family: 'Mali', cursive; font-size: 0.95rem;">
+            <li><a href="#hero" style="color: var(--primary-blue);">★ Trang chủ Đại hội</a></li>
+            <li><a href="#hoat-dong" style="color: var(--primary-blue);">★ Dấu ấn hoạt động</a></li>
+            <li><a href="vankien.html" style="color: var(--primary-blue);">★ Văn kiện & Nghị quyết</a></li>
+            <li><a href="#luu-but" style="color: var(--primary-blue);">★ Gửi lời chúc mừng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.15rem; color: var(--ink-color); margin-bottom: 12px;">Ban Tổ Chức Đại Hội</h4>
+          <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.6;">
+            Chi đoàn Khu phố 8 nhiệm kỳ 2026 - 2027<br>
+            Email: nhatuito@gmail.com<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©2026 Chi đoàn Khu phố 8 - Phường An Hội Tây - TP.HCM.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

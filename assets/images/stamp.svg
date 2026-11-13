@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <filter id="stamp-rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+  </defs>
+  <g filter="url(#stamp-rough)" transform="rotate(-12 100 100)" opacity="0.88">
+    <circle cx="100" cy="100" r="90" fill="none" stroke="#d90429" stroke-width="5" stroke-dasharray="80 3 60 4 70 3" />
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#d90429" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="100,55 106,72 125,72 110,83 115,100 100,89 85,100 90,83 75,72 94,72" fill="#d90429" />
+    <path id="curve-top" d="M 28 100 A 72 72 0 0 1 172 100" fill="none" />
+    <text font-family="'Patrick Hand', 'Mali', sans-serif" font-size="14" font-weight="bold" fill="#d90429" letter-spacing="2">
+      <textPath href="#curve-top" startOffset="50%" text-anchor="middle">
+        ĐẠI HỘI ĐOÀN TNCS HCM
+      </textPath>
+    </text>
+    <text x="100" y="125" font-family="'Patrick Hand', 'Mali', sans-serif" font-size="15" font-weight="bold" fill="#d90429" text-anchor="middle" letter-spacing="1.5">
+      NHIỆM KỲ MỚI
+    </text>
+    <text x="100" y="145" font-family="'Patrick Hand', 'Mali', sans-serif" font-size="12" font-weight="bold" fill="#d90429" text-anchor="middle">
+      ★ THÀNH CÔNG ★
+    </text>
+  </g>
+</svg>

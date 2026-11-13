@@ -1,0 +1,430 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 560" width="100%" height="100%">
+  <defs>
+    <!-- Soft shadow filter -->
+    <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1e293b" flood-opacity="0.12" />
+    </filter>
+
+    <!-- Warm sky gradient -->
+    <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="60%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Youth Blue shirt gradient -->
+    <linearGradient id="shirt-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <!-- Red flag gradient -->
+    <linearGradient id="flag-red" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+
+    <!-- Sun glow gradient -->
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="70%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#fef9c3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .line-bold { stroke: #1e293b; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+    .line-med { stroke: #1e293b; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .line-thin { stroke: #1e293b; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    
+    @keyframes wavingHand {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(14deg); }
+    }
+    @keyframes wavingFlag {
+      0%, 100% { transform: translateY(0px) skewY(0deg); }
+      50% { transform: translateY(-4px) skewY(1.5deg); }
+    }
+    @keyframes gentlePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+    @keyframes flyDove {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      50% { transform: translate(-6px, -8px) rotate(-3deg); }
+    }
+
+    .anim-hand { transform-origin: 660px 310px; animation: wavingHand 2s ease-in-out infinite; }
+    .anim-flag { transform-origin: 220px 200px; animation: wavingFlag 3.5s ease-in-out infinite; }
+    .anim-sun { transform-origin: 425px 120px; animation: gentlePulse 4s ease-in-out infinite; }
+    .anim-dove { animation: flyDove 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Background decorative rounded frame -->
+  <rect x="15" y="15" width="820" height="530" rx="28" fill="url(#sky-gradient)" stroke="#1e293b" stroke-width="3" />
+
+  <!-- ==========================================
+       BACKGROUND ELEMENTS: SUN, CLOUDS, DOVE
+       ========================================== -->
+  <!-- Cartoon Sun with Rays -->
+  <g class="anim-sun">
+    <circle cx="425" cy="115" r="70" fill="url(#sun-glow)" />
+    <circle cx="425" cy="115" r="42" fill="#ffd100" stroke="#1e293b" stroke-width="3" />
+    <circle cx="425" cy="115" r="34" fill="#fde047" />
+    <!-- Cheerful sun face -->
+    <path d="M 416 112 Q 418 116 420 112" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 430 112 Q 432 116 434 112" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 420 122 Q 425 128 430 122" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <circle cx="414" cy="118" r="3" fill="#f87171" opacity="0.6" />
+    <circle cx="436" cy="118" r="3" fill="#f87171" opacity="0.6" />
+
+    <!-- Sun rays doodle -->
+    <line x1="425" y1="60" x2="425" y2="40" class="line-bold" stroke="#f59e0b" />
+    <line x1="465" y1="75" x2="480" y2="60" class="line-bold" stroke="#f59e0b" />
+    <line x1="480" y1="115" x2="500" y2="115" class="line-bold" stroke="#f59e0b" />
+    <line x1="385" y1="75" x2="370" y2="60" class="line-bold" stroke="#f59e0b" />
+    <line x1="370" y1="115" x2="350" y2="115" class="line-bold" stroke="#f59e0b" />
+  </g>
+
+  <!-- Fluffy cartoon clouds -->
+  <!-- Left cloud -->
+  <path d="M 90 120 Q 115 95 145 105 Q 170 85 195 105 Q 225 110 220 135 Q 215 155 185 155 Q 120 160 95 145 Q 80 135 90 120 Z" 
+        fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+  <!-- Right cloud -->
+  <path d="M 660 100 Q 685 75 715 85 Q 740 65 765 85 Q 795 90 790 115 Q 785 135 755 135 Q 690 140 665 125 Q 650 115 660 100 Z" 
+        fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+
+  <!-- Flying Peace Dove (Chim bồ câu trắng ngậm nhành lá) -->
+  <g class="anim-dove" transform="translate(130, 85)">
+    <!-- Body & wings -->
+    <path d="M 45 45 C 30 25, 35 5, 55 10 C 68 15, 75 30, 80 40 C 95 20, 115 25, 110 45 C 105 60, 95 65, 85 68 C 100 75, 95 88, 80 82 C 65 88, 55 78, 58 65 C 45 68, 38 55, 45 45 Z" 
+          fill="#ffffff" stroke="#1e293b" stroke-width="2.5" stroke-linejoin="round" />
+    <!-- Wing lines -->
+    <path d="M 60 25 Q 70 35 72 48" class="line-thin" />
+    <path d="M 88 35 Q 92 45 90 55" class="line-thin" />
+    <!-- Eye & Beak -->
+    <circle cx="104" cy="52" r="2.2" fill="#1e293b" />
+    <polygon points="112,52 120,55 112,58" fill="#f59e0b" stroke="#1e293b" stroke-width="1.5" />
+    <!-- Green olive branch -->
+    <path d="M 118 56 Q 130 54 136 48" stroke="#16a34a" stroke-width="2" fill="none" />
+    <ellipse cx="128" cy="50" rx="4" ry="2.5" fill="#22c55e" transform="rotate(-30 128 50)" />
+    <ellipse cx="135" cy="48" rx="4" ry="2.5" fill="#22c55e" transform="rotate(15 135 48)" />
+  </g>
+
+  <!-- Waving Red Flag in background (Lá cờ đỏ sao vàng) -->
+  <g class="anim-flag">
+    <!-- Flagpole -->
+    <line x1="230" y1="80" x2="230" y2="480" stroke="#64748b" stroke-width="6" stroke-linecap="round" />
+    <circle cx="230" cy="76" r="8" fill="#ffd100" stroke="#1e293b" stroke-width="2" />
+    <!-- Flag cloth -->
+    <path d="M 233 85 C 290 65, 340 115, 395 95 C 415 88, 425 95, 435 90 L 430 205 C 380 225, 330 175, 275 195 C 255 202, 240 198, 233 195 Z" 
+          fill="url(#flag-red)" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+    <!-- Golden Star in center of flag -->
+    <polygon points="330,120 336,134 351,134 339,143 343,157 330,148 317,157 321,143 309,134 324,134" 
+             fill="#ffd100" stroke="#b45309" stroke-width="1.8" stroke-linejoin="round" />
+  </g>
+
+  <!-- ==========================================
+       CHARACTER 1: NAM THANH NIÊN (MALE YOUTH)
+       ========================================== -->
+  <g id="male-youth-group" filter="url(#soft-shadow)">
+    <!-- Body / Blue Youth Shirt -->
+    <g id="male-torso">
+      <!-- Main Torso Shape -->
+      <path d="M 240 375 C 265 330, 375 330, 400 375 L 415 540 L 225 540 Z" 
+            fill="url(#shirt-blue)" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+      
+      <!-- Center Placket & Buttons -->
+      <line x1="320" y1="365" x2="320" y2="540" stroke="#024e75" stroke-width="3.5" />
+      <circle cx="320" cy="400" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+      <circle cx="320" cy="445" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+      <circle cx="320" cy="490" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+
+      <!-- Left Chest Pocket & Youth Union Badge (Huy hiệu Đoàn trên ngực trái) -->
+      <path d="M 260 405 L 295 405 L 295 440 Q 277 450 260 440 Z" fill="#0284c7" stroke="#1e293b" stroke-width="2" />
+      <path d="M 260 405 L 277 415 L 295 405" stroke="#1e293b" stroke-width="2" fill="none" />
+      
+      <!-- HUY HIỆU ĐOÀN NGỰC TRÁI (Rõ nét, đẹp mắt) -->
+      <g transform="translate(268, 412)">
+        <circle cx="10" cy="10" r="10" fill="#ffd100" stroke="#1e293b" stroke-width="1.5" />
+        <circle cx="10" cy="10" r="8" fill="#e63946" stroke="#1e293b" stroke-width="1" />
+        <polygon points="10,5 11.5,8 15,8 12,10 13,13.5 10,11.5 7,13.5 8,10 5,8 8.5,8" fill="#ffd100" />
+      </g>
+
+      <!-- Crisp White Shirt Inner Collar -->
+      <polygon points="305,342 335,342 320,368" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+      <polygon points="316,360 324,360 320,380" fill="#dc2626" />
+
+      <!-- Blue Outer Collar (Cổ áo Đoàn bẻ rộng, ngay ngắn) -->
+      <path d="M 285 338 L 316 372 L 285 365 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+      <path d="M 355 338 L 324 372 L 355 365 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+    </g>
+
+    <!-- Male Left Arm & Confident Thumbs-up Hand (Giơ ngón tay cái thể hiện quyết tâm) -->
+    <g id="male-arm-left">
+      <!-- Sleeve -->
+      <path d="M 240 375 Q 205 410 195 460 L 225 470 Q 235 430 255 395 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+      <!-- Forearm -->
+      <path d="M 195 460 Q 190 490 205 515 L 235 500 Q 225 480 225 470 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+      <!-- Thumbs Up Hand Fist -->
+      <g transform="translate(195, 495)">
+        <ellipse cx="20" cy="18" rx="14" ry="12" fill="#ffedd5" stroke="#1e293b" stroke-width="3" />
+        <!-- Thumb sticking up -->
+        <path d="M 14 12 Q 14 -4 22 -4 Q 28 -4 26 12" fill="#ffedd5" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+        <!-- Finger crease lines -->
+        <line x1="22" y1="14" x2="30" y2="14" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+        <line x1="20" y1="20" x2="28" y2="20" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+        <line x1="18" y1="26" x2="26" y2="26" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+        <!-- Sparkle of confidence -->
+        <path d="M 22 -14 L 24 -9 L 29 -7 L 24 -5 L 22 0 L 20 -5 L 15 -7 L 20 -9 Z" fill="#ffd100" />
+      </g>
+    </g>
+
+    <!-- Male Right Arm (Holding Red Youth Handbook "Sổ Đoàn") -->
+    <g id="male-arm-right">
+      <path d="M 400 375 Q 425 415 405 465 L 380 455 Q 395 420 385 390 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+      <circle cx="390" cy="470" r="14" fill="#ffedd5" stroke="#1e293b" stroke-width="3" />
+      <!-- Red Youth Handbook (Sổ Đoàn Viên) -->
+      <g transform="translate(365, 450) rotate(-10)">
+        <rect x="0" y="0" width="46" height="62" rx="4" fill="#dc2626" stroke="#1e293b" stroke-width="3" />
+        <rect x="0" y="0" width="6" height="62" fill="#991b1b" />
+        <circle cx="25" cy="26" r="11" fill="#ffd100" stroke="#1e293b" stroke-width="1.8" />
+        <text x="25" y="31" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">★</text>
+        <line x1="12" y1="44" x2="38" y2="44" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        <line x1="15" y1="50" x2="35" y2="50" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+      </g>
+    </g>
+
+    <!-- Male Head & Natural Face -->
+    <g id="male-head">
+      <!-- Strong, proper neck -->
+      <path d="M 305 310 L 305 350 Q 320 358 335 350 L 335 310 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="3" />
+      <path d="M 310 332 Q 320 340 330 332" stroke="#fed7aa" stroke-width="2" fill="none" />
+
+      <!-- Natural, well-proportioned Head / Jaw shape -->
+      <path d="M 285 245 C 285 185, 355 185, 355 245 C 355 285, 340 318, 320 318 C 300 318, 285 285, 285 245 Z" 
+            fill="#ffedd5" stroke="#1e293b" stroke-width="3.5" />
+
+      <!-- Ears -->
+      <path d="M 282 245 C 274 240, 274 260, 284 262 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="2.5" />
+      <path d="M 358 245 C 366 240, 366 260, 356 262 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="2.5" />
+
+      <!-- Rosy Cheeks -->
+      <circle cx="298" cy="272" r="8" fill="#f87171" opacity="0.45" />
+      <circle cx="342" cy="272" r="8" fill="#f87171" opacity="0.45" />
+
+      <!-- Cheerful, Bright Eyes (Sparkling, enthusiastic) -->
+      <ellipse cx="304" cy="245" rx="5" ry="7" fill="#1e293b" />
+      <circle cx="302" cy="242" r="2.2" fill="#ffffff" />
+      <ellipse cx="336" cy="245" rx="5" ry="7" fill="#1e293b" />
+      <circle cx="334" cy="242" r="2.2" fill="#ffffff" />
+
+      <!-- Confident Eyebrows -->
+      <path d="M 296 232 Q 306 226 314 230" stroke="#1e293b" stroke-width="3.2" fill="none" stroke-linecap="round" />
+      <path d="M 326 230 Q 334 226 344 232" stroke="#1e293b" stroke-width="3.2" fill="none" stroke-linecap="round" />
+
+      <!-- Friendly Smile with Teeth -->
+      <path d="M 307 274 Q 320 292 333 274 Z" fill="#ffffff" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+      <path d="M 312 284 Q 320 290 328 284" fill="#ef4444" />
+
+      <!-- Cute Nose -->
+      <path d="M 319 254 Q 323 260 318 263" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linecap="round" />
+
+      <!-- Modern Short Haircut (Tóc nam thanh niên trẻ trung) -->
+      <path d="M 280 238 C 275 190, 305 170, 335 172 C 360 174, 365 198, 362 238 C 352 220, 340 215, 320 216 C 305 218, 292 228, 280 238 Z" 
+            fill="#1e293b" stroke="#1e293b" stroke-width="3.5" />
+      <!-- Stylish side tufts -->
+      <path d="M 320 174 Q 330 158 340 170" stroke="#1e293b" stroke-width="3" fill="#1e293b" />
+      <path d="M 335 172 Q 348 162 352 176" stroke="#1e293b" stroke-width="3" fill="#1e293b" />
+    </g>
+  </g>
+
+  <!-- ==========================================
+       CHARACTER 2: NỮ THANH NIÊN (FEMALE YOUTH)
+       ========================================== -->
+  <g id="female-youth-group" filter="url(#soft-shadow)">
+    <!-- Back Hair Layer (Long gentle hair) -->
+    <path d="M 485 240 C 470 310, 475 390, 500 420 C 510 380, 510 310, 505 270 Z" fill="#1e293b" />
+    <path d="M 575 240 C 590 310, 585 390, 560 420 C 550 380, 550 310, 555 270 Z" fill="#1e293b" />
+
+    <!-- Body / Blue Youth Shirt -->
+    <g id="female-torso">
+      <path d="M 470 375 C 495 330, 600 330, 625 375 L 635 540 L 460 540 Z" 
+            fill="url(#shirt-blue)" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+      
+      <!-- Center Placket & Buttons -->
+      <line x1="548" y1="365" x2="548" y2="540" stroke="#024e75" stroke-width="3.5" />
+      <circle cx="548" cy="400" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+      <circle cx="548" cy="445" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+      <circle cx="548" cy="490" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+
+      <!-- Left Chest Pocket & Youth Union Badge -->
+      <path d="M 490 405 L 525 405 L 525 440 Q 507 450 490 440 Z" fill="#0284c7" stroke="#1e293b" stroke-width="2" />
+      <path d="M 490 405 L 507 415 L 525 405" stroke="#1e293b" stroke-width="2" fill="none" />
+
+      <!-- HUY HIỆU ĐOÀN NGỰC TRÁI -->
+      <g transform="translate(498, 412)">
+        <circle cx="10" cy="10" r="10" fill="#ffd100" stroke="#1e293b" stroke-width="1.5" />
+        <circle cx="10" cy="10" r="8" fill="#e63946" stroke="#1e293b" stroke-width="1" />
+        <polygon points="10,5 11.5,8 15,8 12,10 13,13.5 10,11.5 7,13.5 8,10 5,8 8.5,8" fill="#ffd100" />
+      </g>
+
+      <!-- Crisp White Shirt Inner Collar -->
+      <polygon points="533,342 563,342 548,368" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+      <polygon points="544,360 552,360 548,380" fill="#dc2626" />
+
+      <!-- Blue Outer Collar -->
+      <path d="M 515 338 L 544 372 L 515 365 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+      <path d="M 580 338 L 552 372 L 580 365 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+    </g>
+
+    <!-- Female Left Arm (Resting neatly) -->
+    <g id="female-arm-left">
+      <path d="M 470 375 Q 445 420 445 475 L 475 480 Q 485 430 495 390 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+      <circle cx="458" cy="495" r="13" fill="#ffedd5" stroke="#1e293b" stroke-width="3" />
+    </g>
+
+    <!-- Cheerful Waving Right Arm (Cánh tay vẫy chào tươi tắn, tự nhiên) -->
+    <g class="anim-hand">
+      <!-- Upper arm & sleeve -->
+      <path d="M 620 375 Q 655 340 680 305 L 705 325 Q 675 365 635 405 Z" fill="#0284c7" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+      <!-- Forearm -->
+      <path d="M 680 305 Q 710 260 725 235 L 748 250 Q 725 285 705 325 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+      <!-- Open waving hand palm & fingers -->
+      <g transform="translate(720, 205)">
+        <path d="M 12 34 Q 4 18 10 5 Q 16 0 20 8 Q 24 -1 28 7 Q 33 0 37 8 Q 42 7 44 16 Q 46 32 30 46 Z" 
+              fill="#ffedd5" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+        <!-- Motion lines for waving -->
+        <path d="M 4 2 Q -4 10 -2 22" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none" />
+        <path d="M 50 2 Q 58 12 54 24" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none" />
+      </g>
+    </g>
+
+    <!-- Female Head & Sweet Face -->
+    <g id="female-head">
+      <!-- Graceful neck -->
+      <path d="M 534 310 L 534 350 Q 548 358 562 350 L 562 310 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="3" />
+
+      <!-- Head shape -->
+      <path d="M 515 245 C 515 185, 582 185, 582 245 C 582 285, 565 318, 548 318 C 531 318, 515 285, 515 245 Z" 
+            fill="#ffedd5" stroke="#1e293b" stroke-width="3.5" />
+
+      <!-- Ears -->
+      <path d="M 512 245 C 504 240, 504 260, 514 262 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="2.5" />
+      <path d="M 585 245 C 593 240, 593 260, 583 262 Z" fill="#ffedd5" stroke="#1e293b" stroke-width="2.5" />
+
+      <!-- Rosy Cheeks -->
+      <circle cx="526" cy="272" r="8.5" fill="#f87171" opacity="0.5" />
+      <circle cx="570" cy="272" r="8.5" fill="#f87171" opacity="0.5" />
+
+      <!-- Beautiful Sparkling Eyes with Eyelashes -->
+      <ellipse cx="532" cy="245" rx="5.5" ry="7.5" fill="#1e293b" />
+      <circle cx="530" cy="242" r="2.4" fill="#ffffff" />
+      <circle cx="533" cy="247" r="1.2" fill="#ffffff" />
+      <path d="M 526 238 L 523 234" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" />
+
+      <ellipse cx="564" cy="245" rx="5.5" ry="7.5" fill="#1e293b" />
+      <circle cx="562" cy="242" r="2.4" fill="#ffffff" />
+      <circle cx="565" cy="247" r="1.2" fill="#ffffff" />
+      <path d="M 570 238 L 573 234" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" />
+
+      <!-- Gentle Eyebrows -->
+      <path d="M 525 232 Q 533 227 541 231" stroke="#1e293b" stroke-width="2.8" fill="none" stroke-linecap="round" />
+      <path d="M 555 231 Q 563 227 571 232" stroke="#1e293b" stroke-width="2.8" fill="none" stroke-linecap="round" />
+
+      <!-- Sweet Smile with Teeth -->
+      <path d="M 536 274 Q 548 292 560 274 Z" fill="#ffffff" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+      <path d="M 541 284 Q 548 290 555 284" fill="#ef4444" />
+
+      <!-- Cute Nose -->
+      <path d="M 547 254 Q 551 260 546 263" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linecap="round" />
+
+      <!-- Hairstyle with Bangs & Red Ribbon Bow -->
+      <path d="M 510 238 C 510 185, 538 168, 565 170 C 592 174, 595 198, 590 238 C 580 220, 568 215, 548 215 C 530 215, 520 224, 510 238 Z" 
+            fill="#1e293b" stroke="#1e293b" stroke-width="3.5" />
+      
+      <!-- Side Strands -->
+      <path d="M 514 235 Q 510 275 518 285 Q 515 260 518 238" fill="#1e293b" />
+      <path d="M 582 235 Q 586 275 578 285 Q 581 260 578 238" fill="#1e293b" />
+
+      <!-- Red Ribbon Hair Accessory (Chiếc nơ đỏ xinh xắn) -->
+      <g transform="translate(578, 178) rotate(15)">
+        <polygon points="0,0 -12,-8 -12,8" fill="#ef4444" stroke="#1e293b" stroke-width="2" />
+        <polygon points="0,0 12,-8 12,8" fill="#ef4444" stroke="#1e293b" stroke-width="2" />
+        <circle cx="0" cy="0" r="4.5" fill="#ffd100" stroke="#1e293b" stroke-width="1.8" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ==========================================
+       FOREGROUND: SUNFLOWERS (HOA HƯỚNG DƯƠNG)
+       ========================================== -->
+  <!-- Left Sunflower -->
+  <g transform="translate(85, 420)" filter="url(#soft-shadow)">
+    <!-- Stem & Leaves -->
+    <path d="M 35 140 Q 30 70 35 0" stroke="#16a34a" stroke-width="7" fill="none" stroke-linecap="round" />
+    <path d="M 32 60 Q 5 45 10 25 Q 30 35 33 50" fill="#22c55e" stroke="#1e293b" stroke-width="2.5" />
+    <!-- Yellow Petals -->
+    <circle cx="35" cy="0" r="30" fill="#f59e0b" stroke="#1e293b" stroke-width="3" />
+    <ellipse cx="35" cy="-38" rx="11" ry="20" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="73" cy="0" rx="20" ry="11" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="35" cy="38" rx="11" ry="20" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="-3" cy="0" rx="20" ry="11" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="62" cy="-27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(45 62 -27)" />
+    <ellipse cx="62" cy="27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(-45 62 27)" />
+    <ellipse cx="8" cy="27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(45 8 27)" />
+    <ellipse cx="8" cy="-27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(-45 8 -27)" />
+    <!-- Flower Core -->
+    <circle cx="35" cy="0" r="24" fill="#78350f" stroke="#1e293b" stroke-width="3" />
+    <circle cx="35" cy="0" r="18" fill="#92400e" stroke="#fbbf24" stroke-width="2" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Right Sunflower -->
+  <g transform="translate(735, 430) scale(0.9)" filter="url(#soft-shadow)">
+    <path d="M 35 140 Q 40 70 35 0" stroke="#16a34a" stroke-width="7" fill="none" stroke-linecap="round" />
+    <path d="M 37 55 Q 60 40 55 20 Q 37 30 35 45" fill="#22c55e" stroke="#1e293b" stroke-width="2.5" />
+    <circle cx="35" cy="0" r="30" fill="#f59e0b" stroke="#1e293b" stroke-width="3" />
+    <ellipse cx="35" cy="-38" rx="11" ry="20" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="73" cy="0" rx="20" ry="11" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="35" cy="38" rx="11" ry="20" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="-3" cy="0" rx="20" ry="11" fill="#ffd100" stroke="#1e293b" stroke-width="2.5" />
+    <ellipse cx="62" cy="-27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(45 62 -27)" />
+    <ellipse cx="62" cy="27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(-45 62 27)" />
+    <ellipse cx="8" cy="27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(45 8 27)" />
+    <ellipse cx="8" cy="-27" rx="16" ry="13" fill="#ffc300" stroke="#1e293b" stroke-width="2.5" transform="rotate(-45 8 -27)" />
+    <circle cx="35" cy="0" r="24" fill="#78350f" stroke="#1e293b" stroke-width="3" />
+    <circle cx="35" cy="0" r="18" fill="#92400e" stroke="#fbbf24" stroke-width="2" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- ==========================================
+       CLEAR, BEAUTIFUL TOP SPEECH BANNER
+       (Đặt ở góc trên bên phải rộng rãi, không che nhân vật)
+       ========================================== -->
+  <g transform="translate(565, 45)" filter="url(#soft-shadow)">
+    <!-- Speech bubble body with tail pointing to youth -->
+    <path d="M 20 0 L 220 0 Q 240 0 240 20 L 240 75 Q 240 95 220 95 L 85 95 L 45 125 L 55 95 L 20 95 Q 0 95 0 75 L 0 20 Q 0 0 20 0 Z" 
+          fill="#ffffff" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+    <!-- Yellow top decorative tape -->
+    <polygon points="80,-10 160,-10 155,8 75,8" fill="#ffd100" opacity="0.9" stroke="#1e293b" stroke-width="1.8" />
+    <!-- Clear typography inside bubble -->
+    <text x="120" y="40" font-family="'Patrick Hand', 'Mali', cursive, sans-serif" font-size="22" font-weight="bold" fill="#0066cc" text-anchor="middle" letter-spacing="1">
+      KHÁT VỌNG TUỔI TRẺ!
+    </text>
+    <text x="120" y="74" font-family="'Patrick Hand', 'Mali', cursive, sans-serif" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle" letter-spacing="1">
+      ★ TIÊN PHONG - SÁNG TẠO ★
+    </text>
+  </g>
+
+  <!-- Decorative Sparkles, Golden Stars & Floating Hearts -->
+  <g id="sparkles-group">
+    <!-- Star 1 -->
+    <polygon points="215,225 219,235 230,235 221,242 224,252 215,246 206,252 209,242 200,235 211,235" 
+             fill="#ffd100" stroke="#1e293b" stroke-width="1.8" />
+    <!-- Star 2 -->
+    <polygon points="450,210 453,218 462,218 455,223 457,231 450,226 443,231 445,223 438,218 447,218" 
+             fill="#ffd100" stroke="#1e293b" stroke-width="1.5" />
+    <!-- Floating cute Red Heart -->
+    <path d="M 440 248 C 440 238, 424 238, 424 248 C 424 258, 440 270, 440 275 C 440 270, 456 258, 456 248 C 456 238, 440 238, 440 248 Z" 
+          fill="#ef4444" stroke="#1e293b" stroke-width="2" />
+  </g>
+</svg>

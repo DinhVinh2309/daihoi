@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đại hội Chi đoàn Khu phố 8 | Văn kiện Đại hội 2026 - 2027</title>
+  <meta name="description" content="Tra cứu và tải Văn kiện Đại hội Chi đoàn Khu phố 8, nhiệm kỳ 2026 - 2027.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo_doan.png">
+</head>
+<body class="page-vankien">
+
+  <!-- ====================================================================
+       NAVBAR (HAND-DRAWN HEADER)
+       ==================================================================== -->
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo_doan.png" alt="Logo Đoàn TNCS Hồ Chí Minh" class="nav-logo">
+        <div class="nav-titles">
+          <span class="nav-title-main">ĐẠI HỘI CHI ĐOÀN KHU PHỐ 8</span>
+          <span class="nav-title-sub">LẦN THỨ I • NHIỆM KỲ 2026 - 2027</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#hero" class="nav-link">Trang Chủ</a></li>
+        <!-- <li><a href="index.html#hoat-dong" class="nav-link">Recap Hoạt Động</a></li> -->
+        <li><a href="#doc-viewer" class="nav-link active">Đọc Tài Liệu</a></li>
+        <!-- <li><a href="#doc-summary" class="nav-link">Tóm Tắt Nội Dung</a></li> -->
+        <li><a href="#doc-downloads" class="nav-link">Tải Tài Liệu</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Menu">
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         HERO SECTION: VĂN KIỆN ĐẠI HỘI
+         ==================================================================== -->
+    <section class="vankien-hero">
+      <div class="container">
+        <div class="vankien-banner">
+          <span class="hero-badge vankien-banner-badge">TÀI LIỆU CHÍNH THỨC CỦA ĐẠI HỘI</span>
+          <h1 class="hero-title-main vankien-banner-title">
+            DỰ THẢO VĂN KIỆN ĐẠI HỘI <span>CHI ĐOÀN KHU PHỐ 8</span>
+          </h1>
+          <div class="vankien-banner-unit">
+            LẦN THỨ I • NHIỆM KỲ 2026 - 2027
+          </div>
+          <p class="vankien-banner-copy">
+            Văn kiện là kết tinh trí tuệ, tâm huyết và khát vọng của toàn thể đoàn viên thanh niên.
+          </p>
+
+          <div class="vankien-banner-actions">
+            <a href="#doc-viewer" class="btn btn-primary">
+              Xem Trình Chiếu PDF
+            </a>
+            <a href="assets/docs/vankien-daihoi.pdf" download="Van-Kien-Dai-Hoi-Doan.pdf" class="btn btn-accent">
+              Tải Văn Kiện (.PDF)
+            </a>
+            <!-- <a href="assets/docs/vankien-daihoi.pdf" target="_blank" class="btn btn-outline">
+              ↗️ Mở Trong Tab Mới
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION: TRÌNH CHIẾU DỰ THẢO VĂN KIỆN ĐẠI HỘI
+         ==================================================================== -->
+    <section id="doc-viewer" class="vankien-document-section">
+      <div class="container">
+        <div class="pdf-viewer-section">
+          <!-- Viewer Toolbar -->
+          <div class="viewer-toolbar">
+            <div class="viewer-title">
+              <span>📑 Trình Chiếu Toàn Văn Dự Thảo Văn Kiện Đại Hội</span>
+              <span class="card-pill">Bản dự thảo</span>
+            </div>
+
+            <div class="viewer-actions">
+              <a href="assets/docs/vankien-daihoi.pdf" download="Du-Thao-Van-Kien-Dai-Hoi.pdf" class="btn btn-yellow">
+                📥 Tải Dự Thảo PDF
+              </a>
+              <a href="assets/docs/vankien-daihoi.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                🖥️ Xem Toàn Màn Hình
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded PDF Viewer Container -->
+          <div class="pdf-frame-container">
+            <object data="assets/docs/vankien-daihoi.pdf" type="application/pdf" width="100%" height="100%" aria-label="Bản xem trước PDF: Dự thảo Văn kiện Đại hội">
+              <!-- Fallback iframe -->
+              <iframe src="assets/docs/vankien-daihoi.pdf" title="Trình chiếu Dự thảo Văn kiện Đại hội" width="100%" height="100%">
+                <div style="background: #ffffff; padding: 40px; text-align: center; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                  <h3 style="font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 12px;">Trình duyệt không thể hiển thị PDF trực tiếp</h3>
+                  <p style="color: var(--ink-muted); margin-bottom: 20px; max-width: 500px;">
+                    Quý đại biểu vui lòng tải Dự thảo Văn kiện hoặc mở trong tab mới để tiếp tục xem.
+                  </p>
+                  <a href="assets/docs/vankien-daihoi.pdf" download="Du-Thao-Van-Kien-Dai-Hoi.pdf" class="btn btn-primary">
+                    📥 Tải Dự Thảo Văn Kiện PDF
+                  </a>
+                </div>
+              </iframe>
+            </object>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             QUICK DOWNLOADS SECTION
+             ==================================================================== -->
+        <div id="doc-downloads" class="vankien-downloads">
+          <div class="section-header vankien-downloads-header">
+            <span class="section-tag">TÀI LIỆU SỐ</span>
+            <h2 class="section-title">TẢI DỰ THẢO VĂN KIỆN ĐẠI HỘI</h2>
+          </div>
+
+          <div class="vankien-download-grid">
+            <!-- File 1 -->
+            <div class="vankien-download-card">
+              <div class="vankien-download-card-copy">
+                <div style="font-weight: bold; color: var(--primary-blue); margin-bottom: 4px;">Dự Thảo Văn Kiện Đại Hội</div>
+                <div style="font-size: 0.85rem; color: var(--ink-muted);">Định dạng PDF • Đầy đủ</div>
+              </div>
+              <a href="assets/docs/vankien-daihoi.pdf" download class="btn btn-yellow vankien-download-card-btn">
+                📥 Tải về
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Quote Box -->
+      <div class="footer-quote-box">
+        <div class="footer-quote">
+          "Không có việc gì khó, chỉ sợ lòng không bền<br>
+          Đào núi và lấp biển, quyết chí ắt làm nên."
+        </div>
+        <div style="font-family: 'Patrick Hand', cursive; font-size: 1.15rem; font-weight: bold; color: var(--primary-red); margin-top: 6px;">
+          — Chủ tịch Hồ Chí Minh —
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo_doan.png" alt="Logo Đoàn" style="width: 44px; height: 44px;">
+            <div style="font-family: 'Mali', cursive; font-weight: 700; color: var(--primary-blue); font-size: 1.1rem;">
+              ĐẠI HỘI CHI ĐOÀN KHU PHỐ 8<br>
+              LẦN THỨ I, NHIỆM KỲ 2026 - 2027
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.6;">
+            Trang thông tin phục vụ Đại hội Chi đoàn Khu phố 8, nhiệm kỳ 2026 - 2027. Cung cấp thông tin về chương trình, văn kiện, hoạt động và các sự kiện nổi bật của Chi đoàn.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.15rem; color: var(--ink-color); margin-bottom: 12px;">Liên Kết Nhanh</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-family: 'Mali', cursive; font-size: 0.95rem;">
+            <li><a href="index.html#hero" style="color: var(--primary-blue);">★ Trang chủ Đại hội</a></li>
+            <li><a href="index.html#hoat-dong" style="color: var(--primary-blue);">★ Dấu ấn hoạt động</a></li>
+            <li><a href="#doc-viewer" style="color: var(--primary-blue);">★ Văn kiện & Nghị quyết</a></li>
+            <li><a href="index.html#luu-but" style="color: var(--primary-blue);">★ Gửi lời chúc mừng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.15rem; color: var(--ink-color); margin-bottom: 12px;">Ban Tổ Chức Đại Hội</h4>
+          <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.6;">
+            Chi đoàn Khu phố 8 nhiệm kỳ 2026 - 2027<br>
+            Email: nhatuito@gmail.com<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©2026 Chi đoàn Khu phố 8 - Phường An Hội Tây - TP.HCM.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
